@@ -14,8 +14,8 @@ GreyLabel = tk.Label(HelloWindow, bg="grey").pack(ipady=10, fill='y', expand=Tru
 HelloLabel = tk.Label(HelloWindow, text="Hello tkinter!", bg="green", fg="yellow")
 HelloLabel.pack(ipadx=75, ipady=50)
 
-Font_tuple = ("Comic Sans MS", 20, "bold")
-HelloLabel.configure(font=Font_tuple)
+FontComicSans = ("Comic Sans MS", 20, "bold")
+HelloLabel.configure(font=FontComicSans)
 
 GreyLabel = tk.Label(HelloWindow, bg="grey").pack(ipady=10, fill='y', expand=True)
 
