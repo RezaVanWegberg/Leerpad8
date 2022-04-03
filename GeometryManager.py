@@ -18,12 +18,23 @@ def Destroy():
     window.destroy()
 
 #box 1
-box1 = tk.Label(window,text="box 1", bg='green', fg='white')
-box1.pack(ipadx=20,ipady=10, fill='both', expand=True)
+box1 = tk.Label(window, text="box 1", bg='green').pack(ipadx=25,ipady=10, fill='x')
 
 #box 2
-box2 = tk.Label(window, text="box 2")
-box2.pack(ipadx=25,ipady=10)
+box2 = tk.Label(window, text="box 2", bg='red').pack(ipadx=25,ipady=10, fill='x')
+
+#box 3
+box3 = tk.Label(window, text="box 3", bg='yellow').pack(ipadx=25,ipady=10, fill='y')
+
+#box 4
+box4 = tk.Label(window, text="box 4", bg='purple', fg='white').pack(ipadx=25,ipady=10, fill='both', expand=True, side='right')
+
+#box 5
+box5 = tk.Label(window, text="box 5", bg='blue', fg='white').pack(ipadx=25,ipady=10, fill='both', expand=True, side='right')
+
+#box 6
+box6 = tk.Label(window, text="box 6", bg='magenta', fg='white').pack(ipadx=25,ipady=10, fill='y', expand=True, side='right')
+
 
 #top test
 for x in range(2):
