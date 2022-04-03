@@ -1,7 +1,3 @@
-from ast import With
-from distutils.command.config import config
-from operator import truediv
-from textwrap import fill
 import tkinter as tk
 
 
@@ -42,7 +38,7 @@ for x in range(2):
     DestroyWindow.geometry('200x50')
     # box3 = tk.Label(DestroyWindow, text="box")
     # box3.pack(ipadx=60,ipady=25)
-    button = tk.Button(DestroyWindow, text="destroy", command=Destroy).pack(ipadx=10,ipady=10, fill='both', expand=True)
+    button = tk.Button(DestroyWindow, text="destroy", command=Destroy, activebackground='black', activeforeground='white').pack(ipadx=10,ipady=10, fill='both', expand=True)
 
 # #top test2    alles van top test2 werkt niet, zodra ik de code actief heb wirdt de window gelijk withdrawed 
 # WindowDeiconify = tk.Toplevel()
