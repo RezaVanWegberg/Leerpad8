@@ -1,5 +1,5 @@
 import tkinter as tk
-
+import random
 
 window = tk.Tk()
 
@@ -40,16 +40,31 @@ for x in range(2):
     # box3.pack(ipadx=60,ipady=25)
     button = tk.Button(DestroyWindow, text="destroy", command=Destroy, activebackground='black', activeforeground='white').pack(ipadx=10,ipady=10, fill='both', expand=True)
 
-# #top test2    alles van top test2 werkt niet, zodra ik de code actief heb wirdt de window gelijk withdrawed 
-# WindowDeiconify = tk.Toplevel()
-# WindowDeiconify.geometry('250x100')
-# button = tk.Button(WindowDeiconify, text="show", command= window.deiconify()).pack(ipadx=10,ipady=10, fill='both', expand=True)
+#top test2    alles van top test2 werkt niet, zodra ik de code actief heb wirdt de window gelijk withdrawed 
+WindowDeiconify = tk.Toplevel()
+WindowDeiconify.geometry('250x100')
+button = tk.Button(WindowDeiconify, text="show", command= window.deiconify).pack(ipadx=10,ipady=10, fill='both', expand=True)
 
-# WindowHide = tk.Toplevel()
-# WindowHide.geometry('250x100')
-# button2 = tk.Button(WindowHide, text="hide", command= window.withdraw()).pack(ipadx=10,ipady=10, fill='both', expand=True)
+def PrintHello():
+    print("hello")
+
+def PrintGoodbye():
+    print("goodbye")
+
+def clicked():
+    coin = random.randint(0,1)
+
+    if coin == 0:
+        return PrintHello
+    else:
+        return PrintGoodbye
 
 
+WindowHide = tk.Toplevel()
+WindowHide.geometry('250x100')
+button2 = tk.Button(WindowHide, text="hide", command= window.withdraw).pack(ipadx=10,ipady=10, fill='both', expand=True)
+
+clicked()()
 
 
 
