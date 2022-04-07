@@ -1,5 +1,7 @@
 import tkinter as tk
 import random
+from tkinter.messagebox import showwarning
+from turtle import title
 
 window = tk.Tk()
 
@@ -45,26 +47,26 @@ WindowDeiconify = tk.Toplevel()
 WindowDeiconify.geometry('250x100')
 button = tk.Button(WindowDeiconify, text="show", command= window.deiconify).pack(ipadx=10,ipady=10, fill='both', expand=True)
 
-def PrintHello():
-    print("hello")
-
-def PrintGoodbye():
-    print("goodbye")
-
-def clicked():
-    coin = random.randint(0,1)
-
-    if coin == 0:
-        return PrintHello
-    else:
-        return PrintGoodbye
-
-
 WindowHide = tk.Toplevel()
 WindowHide.geometry('250x100')
 button2 = tk.Button(WindowHide, text="hide", command= window.withdraw).pack(ipadx=10,ipady=10, fill='both', expand=True)
 
-clicked()()
+# def PrintHello():
+#     print("hello")
+
+# def PrintGoodbye():
+#     print("goodbye")
+
+# def clicked():
+#     coin = random.randint(0,1)
+
+#     if coin == 0:
+#         return PrintHello
+#     else:
+#         return PrintGoodbye
+
+
+# clicked()()
 
 
 

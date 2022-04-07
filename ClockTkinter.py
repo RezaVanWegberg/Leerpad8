@@ -5,6 +5,7 @@ from tkinter.ttk import *
 # importing strftime function to
 # retrieve system's time
 from time import strftime
+from turtle import left
  
 root = Tk()
 root.title('Clock')
