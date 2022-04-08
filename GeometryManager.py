@@ -19,7 +19,7 @@ def Destroy():
 box1 = tk.Label(window, text="box 1", bg='green').pack(ipadx=25,ipady=10, fill='x')
 
 #box 2
-box2 = tk.Label(window, text="box 2", bg='red').pack(ipadx=25,ipady=10, fill='x')
+box2 = tk.Label(window, text="box 2", bg='red').pack(ipadx=25,ipady=10, fill='both')
 
 #box 3
 box3 = tk.Label(window, text="box 3", bg='yellow').pack(ipadx=25,ipady=10, fill='y')
